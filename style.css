@@ -1,0 +1,62 @@
+body {
+    margin: 0;
+    overflow: hidden;
+    background-color: #fdf5e6;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+#ui-overlay {
+    position: absolute;
+    top: 20px;
+    width: 100%;
+    text-align: center;
+    pointer-events: none;
+}
+
+#button-container {
+    position: absolute;
+    bottom: 40px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#magic-btn {
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    background: #ff6b6b;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(255, 107, 107, 0.4);
+    transition: transform 0.2s, background 0.3s;
+}
+
+#magic-btn:hover {
+    transform: scale(1.1);
+    background: #ff5252;
+}
+
+#message-display {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(255, 255, 255, 0.9);
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    font-size: 1.5rem;
+    color: #5d4037;
+    text-align: center;
+    border: 2px solid #ff6b6b;
+    z-index: 100;
+    transition: opacity 0.5s;
+    max-width: 80%;
+}
+
+.hidden {
+    display: none;
+    opacity: 0;
+}
