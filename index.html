@@ -3,21 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>A Digital Garden for Mom</title>
+    <title>Mom's Digital Garden</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
 </head>
 <body>
     <div id="ui-overlay">
-        <h1>Happy Birthday, Ma!!!!!</h1>
-        <p>Plant flowers with clicks, or use the magic button below.</p>
-    </div>
-
-    <div id="button-container">
-        <button id="magic-btn" onclick="triggerMagic()">Send Love ❤️</button>
+        <h1 id="main-title">Happy Birthday, Ma! ❤️</h1>
+        <p id="main-subtitle">Click to plant flowers, or use the controls below</p>
     </div>
 
     <div id="message-display" class="hidden"></div>
+
+    <div id="controls">
+        <button class="action-btn" id="magic-btn" onclick="triggerMagic()">Send Love ❤️</button>
+        <button class="action-btn" onclick="toggleNightMode()">Toggle Night 🌙</button>
+        <button class="action-btn" onclick="clearGarden()">Clear Garden 🗑️</button>
+        <button class="action-btn" onclick="toggleCinemaMode()">Pictures 🖼️</button>
+    </div>
 
     <script src="sketch.js"></script>
 </body>
